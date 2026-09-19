@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QR Fácil - Gerador de QR Code Grátis</title>
+
+    <meta
+        name="description"
+        content="Gere QR Codes gratuitamente de forma rápida e simples."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>QR Fácil</h1>
+        <p>Gerador de QR Code grátis</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+
+            <h2>Gerar QR Code</h2>
+
+            <p>
+                Digite um link ou qualquer texto abaixo:
+            </p>
+
+            <input
+                type="text"
+                id="texto"
+                placeholder="Ex: https://google.com"
+            >
+
+            <button onclick="gerarQRCode()">
+                Gerar QR Code
+            </button>
+
+            <div id="qrcode"></div>
+
+            <button
+                id="baixar"
+                onclick="baixarQRCode()"
+                style="display: none;"
+            >
+                Baixar QR Code
+            </button>
+
+        </section>
+
+        <section class="info">
+
+            <h2>Como usar?</h2>
+
+            <p>
+                Digite um link ou texto no campo acima e clique
+                em "Gerar QR Code". O código será criado
+                automaticamente.
+            </p>
+
+            <h2>O que é um QR Code?</h2>
+
+            <p>
+                QR Code é um código que pode armazenar informações
+                como links, textos e outros dados. Ele pode ser
+                escaneado pela câmera de um celular.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © 2026 QR Fácil
+        </p>
+
+        <a href="politica.html">
+            Política de Privacidade
+        </a>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
